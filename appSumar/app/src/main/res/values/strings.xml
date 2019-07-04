@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appSumar</string>
+    <string name="tv_txt_1" >Ingrese el primer valor</string>
+    <string name="tv_txt_2">Ingrese el segundo valor</string>
+    <string name="btn_txt_1">SUMAR</string>
+    <string name="tv_tct_3">Resultado</string>
+</resources>

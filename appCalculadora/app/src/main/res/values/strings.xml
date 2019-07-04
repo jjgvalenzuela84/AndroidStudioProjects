@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appCalculadora</string>
+    <string name="action_settings">Settings</string>
+    <string name="StrTv1">Ingrese primer valor</string>
+    <string name="StrTv2">Ingrese segundo valor</string>
+    <string name="StrR1">Sumar</string>
+    <string name="StrR2">Restar</string>
+    <string name="btn1">Operar</string>
+    <string name="StrTv3">Resultado</string>
+</resources>

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void saludar(View view){
-         Toast.makeText(this, "Hola Tontuna!!!",Toast.LENGTH_SHORT).show();
+         Toast.makeText(this, "Hola Mundo!!!",Toast.LENGTH_SHORT).show();
     }
 
 

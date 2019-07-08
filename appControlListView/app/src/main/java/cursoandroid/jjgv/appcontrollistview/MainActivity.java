@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvl;
     private ListView lvl;
     private String[] paises={"Argentina","Chile","Paraguay","Bolivia","Peru",
-            "Ecuador","Brasil","Colombia","Venezuela","Uruguay"};
+            "Ecuador","Brasil","Colombia","Venezuela","Uruguay","España","Francia","Portugal"};
     private String[] habitantes={"40000000","17000000","6500000","10000000","30000000",
             "14000000","183000000","44000000","29000000","3500000"};
 
@@ -47,7 +47,11 @@ public class MainActivity extends AppCompatActivity {
         lvl.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                tvl.setText("Poblacion de "+ lvl.getItemAtPosition(position) + " es " + habitantes[position]);
+                try {
+                    tvl.setText("Poblacion de " + lvl.getItemAtPosition(position) + " es " + habitantes[position]);
+                }catch (ArrayIndexOutOfBoundsException e){
+                    tvl.setText("La poblacion de " + lvl.getItemAtPosition(position) + " no está registrada");
+                }
             }
         });
 
